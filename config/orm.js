@@ -1,13 +1,13 @@
 var connection = require("../config/connection.js");
-function printQuestionMarks(num) {
-    var arr = [];
+// function printQuestionMarks(num) {
+//     var arr = [];
 
-    for (var i = 0; i < num; i++) {
-        arr.push("?");
-    }
+//     for (var i = 0; i < num; i++) {
+//         arr.push("?");
+//     }
 
-    return arr.toString();
-}
+//     return arr.toString();
+// }
 function objToSql(ob) {
     selectAll
     var arr = [];
