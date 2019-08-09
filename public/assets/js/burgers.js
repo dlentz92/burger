@@ -21,13 +21,13 @@ $(function () {
       );
     });
   
-    $(".create-form").on("submit", function (event) {
+    $('#submit').on("click", function (event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
   
       var newBurgers = {
-        burger_name: $("#ca").val().trim(),
-        devoured: $("[name=devoured]:checked").val().trim()
+        burger_name: $("#burgerName").val(),
+        devoured: 0
       };
   
       // Send the POST request.
@@ -38,14 +38,14 @@ $(function () {
         function () {
           console.log("created new burger");
           // Reload the page to get the updated list
-          location.reload();
+          // location.reload();
         }
       );
     });
   
     $(".delete").on("click", function (event) {
       // Make sure to preventDefault on a submit event.
-      event.preventDefault();
+      
       var burgersID = $(this).data("id")
   
   
@@ -55,7 +55,7 @@ $(function () {
   
       }).then(
         function () {
-          console.log("deleted burger");
+          console.log("deleted burger", burgersID);
           // Reload the page to get the updated list
           location.reload();
         });
