@@ -60,8 +60,11 @@ router.delete("/api/burgers/:id", function (req, res) {
   console.log("condition", condition)
   burgers.delete(
     condition, function(result) {
-      res.json(result)
-
+      if(result.affectedRows == 0){
+        return res.status(400).end();
+      }else{
+        res.status(200).end();
+      }
     }
   )
 })
