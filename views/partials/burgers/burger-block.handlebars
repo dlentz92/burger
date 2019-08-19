@@ -1,10 +1,14 @@
-<li>
-	{{name}}
+<div class="row">
+	<div class="col-2">
+		<p>{{burger_name}}</p>
+	</div>
+	<div class="col-6">
+		<button type="button" type="button" class="btn btn-outline-light btn-sm" class="change-eat" id="buttons" 
+			data-id="{{id}}" data-neweat="{{eat}}">
+			{{#if eat}}eat TIME!{{else}}NEED TO EAT!{{/if}}
+		</button>
 
-	<button class="change-eat" data-id="{{id}}" data-neweat="{{eat}}">
-		{{#if eat}}eat TIME!{{else}}throw UP!{{/if}}
-	</button>
-
-	<button class="delete" data-id="{{id}}">DELETE</button>
-
-</li>
+		<button type="button" class="btn btn-outline-light btn-sm" class="delete" id="buttons" data-id="{{id}}">TIME TO SIT AND RELAX
+		</button>
+	</div>
+</div>
