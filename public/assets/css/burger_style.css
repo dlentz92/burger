@@ -1,19 +1,33 @@
-/* #jumbo{
-    /* background:url(../img/perfect.gif); */
-    /* background:url(../img/burgerSetup.gif); */
-    /* background-repeat: no-repeat; */
-    /* background-size: 100% 100%; */
-    /* min-height: 300px;
-    padding: 0%; */
-    /* margin-top: 15px; */
-    /* margin-left: 50px;
-    margin-right: 50px; */
-    /* background-position: 0% 25%; */
-/* } */
+#jumbo{
+    /* background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100px;
+    padding: 0%;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-position: 0% 25%; */
+    background-color: #FFC72C;
+    margin-top: -100px;
+
+}
 body{
 background: url(../img/burgerRealistic.jpg);
-font-family: 'Shrikhand', cursive;
 background-size: 100% 100%;
-margin-left: 50px;
-margin-right: 50px;
 }
+
+#menu{
+    font-family: 'Shrikhand', cursive;
+    color: #DA291C;
+}
+
+.menu{
+    font-family: 'Shrikhand', cursive;
+    color: #DA291C;
+}
+
+#text{
+    font-family: 'Shrikhand', cursive;
+    color: green;
+}
+

@@ -1,35 +1,44 @@
-{{!-- <div id="jumbo" class="jumbotron jumbotron-fluid">
+<div id="jumbo" class="jumbotron jumbotron-fluid">
   <div class="container">
-    <img class="burger" >
+    <div id="menu">
+      <h3 class= "menu">Menu</h3>
+    </div>
   </div>
-</div> --}}
+</div>
+<div id = "text">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
-<h1>Current </h1>
 
 
   {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/unless}}
+  {{#unless devoured}}
+  {{> burgers/burger-block devoured=true}}
+  {{/unless}}
   {{/each}}
 
-<h2>hamburger eaten!</h2>
+  <h2>hamburger eaten!</h2>
 
-<ul>
-  {{#each burgers}}
+  <ul>
+    {{#each burgers}}
     {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
+    {{> burgers/burger-block devoured=false}}
     {{/if}}
-  {{/each}}
-</ul>
+    {{/each}}
+  </ul>
 
-<h2>Add a burger</h2>
-<form class="create-form">
+  <h2>Add a burger</h2>
+  <form class="create-form">
 
-  <div class="form-group">
-    <label for="burgerName">Burger Name:</label>
-    <input type="text" id="burgerName" name="burger_name">
-  </div>
+    <div class="form-group">
+      <label for="burgerName">Burger Name:</label>
+      <input type="text" id="burgerName" name="burger_name">
+    </div>
 
-  <button type="submit" id="submit" type="button" class="btn btn-outline-light btn-sm" >Add burger</button>
-</form>
+    <button type="submit" id="submit" type="button" class="btn btn-outline-light btn-sm">Add burger</button>
+  </form>
+</div>
