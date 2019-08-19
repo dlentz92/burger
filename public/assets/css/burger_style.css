@@ -9,21 +9,15 @@
     background-position: 0% 25%; */
     background-color: #FFC72C;
     margin-top: -100px;
-
+}
+#menu{
+    font-family: 'Shrikhand', cursive;
+    color: #DA291C;
+    
 }
 body{
 background: url(../img/burgerRealistic.jpg);
 background-size: 100% 100%;
-}
-
-#menu{
-    font-family: 'Shrikhand', cursive;
-    color: #DA291C;
-}
-
-.menu{
-    font-family: 'Shrikhand', cursive;
-    color: #DA291C;
 }
 
 #text{
@@ -31,3 +25,14 @@ background-size: 100% 100%;
     color: green;
 }
 
+#buttons{
+    color:#DA291C
+}
+
+#submit{
+    color:#DA291C
+}
+
+#burgerName{
+    opacity: .4;
+}
