@@ -1,19 +1,14 @@
 #jumbo{
-    /* background-repeat: no-repeat;
-    background-size: 100% 100%;
-    min-height: 100px;
-    padding: 0%;
-    margin-top: 15px;
-    margin-left: 50px;
-    margin-right: 50px;
-    background-position: 0% 25%; */
     background-color: #FFC72C;
-    margin-top: -100px;
+    margin-top: -45px;
+    height: 100px;
 }
+
 #menu{
     font-family: 'Shrikhand', cursive;
     color: #DA291C;
-    position:
+    font-size: 50px;
+    text-align: center;
     
 }
 body{
@@ -23,7 +18,8 @@ background-size: 100% 100%;
 
 #text{
     font-family: 'Shrikhand', cursive;
-    color: green;
+    color: #FFC72C;;
+    border-color: #FFC72C;
 }
 
 #buttons{
