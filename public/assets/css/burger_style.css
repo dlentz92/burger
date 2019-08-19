@@ -31,5 +31,9 @@ background-size: 100% 100%;
 }
 
 #burgerName{
+    font-size: 20px;
+}
+
+#burgerText{
     opacity: .4;
 }
