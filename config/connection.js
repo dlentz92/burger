@@ -12,7 +12,7 @@ connection = mysql.createConnection(process.env.JAWSDB_URL);
     database: "burgers_db"
   });
 }
-
+//comment
 connection.connect();
 
 module.exports = connection;
